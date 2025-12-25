@@ -1,0 +1,13 @@
+{
+  "name": "snoopwerk-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "@google/genai": "^1.34.0",
+    "cors": "^2.8.5"
+  }
+}
