@@ -11,3 +11,10 @@
     "cors": "^2.8.5"
   }
 }
+{
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'no build step required'"
+  }
+}
+
