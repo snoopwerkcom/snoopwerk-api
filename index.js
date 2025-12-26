@@ -29,6 +29,21 @@ app.post("/generate", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
+app.get("/api/v1/user/credits", (req, res) => {
+  res.json({
+    credits: 100,
+    plan: "free",
+    status: "active"
+  });
+});
+app.get("/", (req, res) => {
+  res.send("Snoopwerk API alive");
+});
+
+app.listen(PORT, () => {
+  console.log("API running on port", PORT);
+});
+
 app.listen(PORT, () => {
   console.log("API running on port", PORT);
 });
